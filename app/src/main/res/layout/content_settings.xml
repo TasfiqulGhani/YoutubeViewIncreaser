@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Settings"
+    tools:showIn="@layout/activity_settings">
+
+    <EditText
+        android:layout_width="300dp"
+        android:hint="Youtube Link"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="https://www.youtube.com/watch?v=BtvSbq-UPLM"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:hint="Time"
+        android:text="10"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Save"
+        android:onClick="save"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content"
+        tools:ignore="OnClick" />
+
+</LinearLayout>
